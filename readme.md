@@ -117,7 +117,22 @@ Epoch | Train Loss | Val Loss | Accuracy | Precision | Recall | F1
 3     | 0.0135     | 0.8763   | 0.8726   | 0.8623    | 0.8867 | 0.8744
 4     | 0.0098     | 0.9192   | 0.8584   | 0.8333    | 0.8962 | 0.8636
 ```
+📁 Model Files & Access
 
+The flirty_model folder is not included in this repository due to file size limits.
+If you wish to run inference using the pre-trained model, you can download it directly from Hugging Face Hub:
+
+➡️ Pretrained Model: M-Asad29/flirty-model-bert
+
+Use it in your code as:
+
+from transformers import BertTokenizer, BertForSequenceClassification
+
+model = BertForSequenceClassification.from_pretrained("M-Asad29/flirty-model-bert")
+tokenizer = BertTokenizer.from_pretrained("M-Asad29/flirty-model-bert")
+
+
+If you prefer, you can also train your own model using the provided notebook (flirty_chatbot.ipynb) and your own dataset, then save it in a local directory named flirty_model/ for inference.
 ---
 
 ## 🧪 Streamlit Web App
