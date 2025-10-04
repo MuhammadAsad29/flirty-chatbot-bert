@@ -1,4 +1,3 @@
-
 # 💬 Flirty Chatbot (BERT-Based Text Classifier)
 
 A deep learning project that detects **flirty vs. non-flirty messages** using a fine-tuned **BERT model**. This project combines two labeled text datasets, preprocesses them, trains multiple baselines and transformer models, and provides both notebook-based and Streamlit-based inference interfaces.
@@ -131,13 +130,13 @@ If you wish to run inference using the pre-trained model, you can download it di
 
 Use it in your code as:
 
-from transformers import BertTokenizer, BertForSequenceClassification
-
-model = BertForSequenceClassification.from_pretrained("M-Asad29/flirty-model-bert")
+```
+from transformers import BertTokenizer, BertForSequenceClassificationmodel = BertForSequenceClassification.from_pretrained("M-Asad29/flirty-model-bert")
 tokenizer = BertTokenizer.from_pretrained("M-Asad29/flirty-model-bert")
+```
+
 
 If you prefer, you can also train your own model using the provided notebook (flirty_chatbot.ipynb) and your own dataset, then save it in a local directory named flirty_model/ for inference.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🧪 Streamlit Web App
 
