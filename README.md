@@ -299,6 +299,6 @@ If you use this repository, please cite:
   title={Flirty Chatbot: BERT-Based Flirt Detection},
   author={Muhammad Asad},
   year={2025},
-  url={https://github.com/M-Asad29/flirty-chatbot-bert}
+  url={https://github.com/MuhammadAsad29/flirty-chatbot-bert}
 }
 ```
